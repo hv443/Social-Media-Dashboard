@@ -1,0 +1,60 @@
+@import "../css-utility/forwardCss";
+
+// dark mode button
+
+.light-mode {
+  .dark-mode--btn {
+    background-color: $Toggle-light;
+
+    &::after {
+      background-color: $White--Text;
+      transition: 0.5s;
+    }
+  }
+}
+
+.dark-mode-active {
+  .dark-mode--btn {
+    background-image: $Toggle;
+
+    &::after {
+      background-color: $Very-Dark-Blue--Text;
+      left: 52%;
+      transition: 0.5s;
+    }
+  }
+}
+
+// full body style color
+
+.light-mode {
+  color: $Dark-Grayish-Blue--Text;
+
+  .card,
+  .s-card {
+    background-color: $Light-Grayish-Blue--Card-BG;
+  }
+
+  h1,
+  .card--follower-count,
+  .s-card__counter--count,
+  .overview--heading {
+    color: $Very-Dark-Blue--Text;
+  }
+}
+
+.dark-mode-active {
+  color: $Desaturated-Blue--Text;
+
+  .card,
+  .s-card {
+    background-color: $Dark-Desaturated-Blue--Card-BG;
+  }
+
+  h1,
+  .card--follower-count,
+  .s-card__counter--count,
+  .overview--heading {
+    color: $White--Text;
+  }
+}

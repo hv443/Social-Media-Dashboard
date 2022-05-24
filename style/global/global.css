@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background-image: linear-gradient(hsl(225deg, 100%, 98%) 25%, hsl(0deg, 0%, 100%) 0);
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-image: linear-gradient(hsl(225deg, 100%, 98%) 10%, hsl(0deg, 0%, 100%) 0);
+  }
+}
+
+.body--container {
+  width: inherit;
+  color: hsl(228deg, 12%, 44%);
+  padding: 1.5rem;
+}
+
+.dark-mode-active .body--container {
+  width: inherit;
+  color: hsl(228deg, 34%, 66%);
+  background-image: linear-gradient(hsl(232deg, 19%, 15%) 25%, hsl(230deg, 17%, 14%) 0);
+}
+@media screen and (max-width: 500px) {
+  .dark-mode-active .body--container {
+    background-image: linear-gradient(hsl(232deg, 19%, 15%) 10%, hsl(230deg, 17%, 14%) 0);
+  }
+}/*# sourceMappingURL=global.css.map */

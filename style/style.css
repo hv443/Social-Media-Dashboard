@@ -1,0 +1,195 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (min-width: 500px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+header .header--text {
+  width: 100%;
+}
+header .header--text h1 {
+  font-size: 22px;
+}
+
+.hr {
+  width: 100%;
+  margin-block: 1rem;
+  height: 1px;
+  background-color: hsl(228deg, 12%, 44%);
+}
+@media screen and (min-width: 500px) {
+  .hr {
+    display: none;
+  }
+}
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+}
+.dark-mode .dark-mode--btn {
+  width: 40px;
+  height: 20px;
+  border-radius: 1em;
+  position: relative;
+}
+@media screen and (min-width: 500px) {
+  .dark-mode .dark-mode--btn {
+    margin-left: 0.5rem;
+  }
+}
+.dark-mode .dark-mode--btn::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  height: 80%;
+  width: 40%;
+  left: 8%;
+  top: 10%;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+@media screen and (min-width: 500px) {
+  main .cards {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+main .cards .card {
+  width: 100%;
+  text-align: center;
+  border-radius: 0.3em;
+  padding: 1rem 0;
+  height: 100%;
+  border-top: 0.3rem solid hsl(208deg, 92%, 53%);
+}
+main .cards .card:nth-of-type(3) {
+  border-top: 0.3rem solid linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
+}
+main .cards .card:nth-of-type(4) {
+  border-top: 0.3rem solid hsl(348deg, 97%, 39%);
+}
+main .cards .card .card__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0.5rem;
+}
+main .cards .card .card__user .card__user--logo {
+  display: grid;
+  place-items: center;
+  margin: 0.5rem;
+}
+main .cards .card .card--follower-count {
+  font-size: 50px;
+  font-weight: 700;
+}
+main .cards .card .card--follower-text {
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .cards .card .card__daily-changes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1rem;
+  color: hsl(163deg, 72%, 41%);
+}
+main .cards .card .card__daily-changes .card__daily-changes--img {
+  display: grid;
+  place-items: center;
+  margin-right: 0.5rem;
+}
+
+.overview .overview--heading {
+  margin-bottom: 1.5rem;
+}
+.overview .overview__s-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 500px) {
+  .overview .overview__s-cards {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+.overview .overview__s-cards .s-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  padding: 1.5em;
+}
+.overview .overview__s-cards .s-card .s-card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.overview .overview__s-cards .s-card .s-card__title .s-card__title--img {
+  display: grid;
+  place-items: center;
+}
+.overview .overview__s-cards .s-card .s-card__counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.overview .overview__s-cards .s-card .s-card__counter .s-card__counter--count {
+  font-size: 25px;
+  font-weight: 700;
+}
+.overview .overview__s-cards .s-card .s-card__counter .s-card__counter--daily-change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.overview .overview__s-cards .s-card .s-card__counter .s-card__counter--daily-change img {
+  margin-right: 0.2rem;
+}
+
+.down {
+  color: hsl(356deg, 69%, 56%);
+}
+
+.up {
+  color: hsl(163deg, 72%, 41%);
+}/*# sourceMappingURL=style.css.map */

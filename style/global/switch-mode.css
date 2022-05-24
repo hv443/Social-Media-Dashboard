@@ -1,0 +1,44 @@
+.light-mode .dark-mode--btn {
+  background-color: hsl(230deg, 22%, 74%);
+}
+.light-mode .dark-mode--btn::after {
+  background-color: hsl(0deg, 0%, 100%);
+  transition: 0.5s;
+}
+
+.dark-mode-active .dark-mode--btn {
+  background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+.dark-mode-active .dark-mode--btn::after {
+  background-color: hsl(230deg, 17%, 14%);
+  left: 52%;
+  transition: 0.5s;
+}
+
+.light-mode {
+  color: hsl(228deg, 12%, 44%);
+}
+.light-mode .card,
+.light-mode .s-card {
+  background-color: hsl(227deg, 47%, 96%);
+}
+.light-mode h1,
+.light-mode .card--follower-count,
+.light-mode .s-card__counter--count,
+.light-mode .overview--heading {
+  color: hsl(230deg, 17%, 14%);
+}
+
+.dark-mode-active {
+  color: hsl(228deg, 34%, 66%);
+}
+.dark-mode-active .card,
+.dark-mode-active .s-card {
+  background-color: hsl(228deg, 28%, 20%);
+}
+.dark-mode-active h1,
+.dark-mode-active .card--follower-count,
+.dark-mode-active .s-card__counter--count,
+.dark-mode-active .overview--heading {
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=switch-mode.css.map */
