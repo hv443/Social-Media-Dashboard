@@ -33,6 +33,16 @@
   .card,
   .s-card {
     background-color: $Light-Grayish-Blue--Card-BG;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: darken(
+        $color: $Light-Grayish-Blue--Card-BG,
+        $amount: 10%
+      );
+      transform: scale(1.05);
+    }
   }
 
   h1,
@@ -49,6 +59,16 @@
   .card,
   .s-card {
     background-color: $Dark-Desaturated-Blue--Card-BG;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: lighten(
+        $color: $Dark-Desaturated-Blue--Card-BG,
+        $amount: 10%
+      );
+      transform: scale(1.05);
+    }
   }
 
   h1,

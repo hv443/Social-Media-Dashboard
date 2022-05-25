@@ -21,6 +21,13 @@
 .light-mode .card,
 .light-mode .s-card {
   background-color: hsl(227deg, 47%, 96%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.light-mode .card:hover,
+.light-mode .s-card:hover {
+  background-color: #cbd2ec;
+  transform: scale(1.05);
 }
 .light-mode h1,
 .light-mode .card--follower-count,
@@ -35,6 +42,13 @@
 .dark-mode-active .card,
 .dark-mode-active .s-card {
   background-color: hsl(228deg, 28%, 20%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark-mode-active .card:hover,
+.dark-mode-active .s-card:hover {
+  background-color: #374062;
+  transform: scale(1.05);
 }
 .dark-mode-active h1,
 .dark-mode-active .card--follower-count,
