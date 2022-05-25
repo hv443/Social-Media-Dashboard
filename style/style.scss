@@ -5,7 +5,7 @@ header {
   @include flex(space-between, column);
   align-items: flex-start;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 480px) {
     @include flex(space-between, row);
   }
 
@@ -24,7 +24,7 @@ header {
   height: 1px;
   background-color: $Dark-Grayish-Blue--Text;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 }
@@ -33,7 +33,7 @@ header {
   @include flex(space-between, row);
   width: 100%;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 480px) {
     @include flex(flex-end, row);
   }
 
@@ -43,7 +43,7 @@ header {
     border-radius: 1em;
     position: relative;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 480px) {
       margin-left: 0.5rem;
     }
 
@@ -67,11 +67,11 @@ main {
     gap: 1rem;
     margin-block: 2rem;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1000px) {
       grid-template-columns: repeat(4, 1fr);
     }
 
@@ -140,11 +140,11 @@ main {
     place-items: center;
     gap: 1rem;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 480px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1000px) {
       grid-template-columns: repeat(4, 1fr);
     }
 
